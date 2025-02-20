@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParagonixPrimeX</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../styles/styles.css">
+	<link rel="stylesheet" href="../../styles/intlTelInput.css">
+	<link rel="stylesheet" href="../../styles/style-min.css">
+	<link rel="stylesheet" type="text/css" href="../../styles/offers.css">
+
+	<script src="../../js/jquery-3.7.1.min.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon.png">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="bg">
+            <header class="header">
+                <div class="container flex-bl">
+                    <a href="/" class="logo_header bold">TRADE WITH ALL THE TOOLS YOU NEED</a>
+                    <div class="language">
+                        <a id="toggle" class="menu__link"><div class="iti__flag iti__gb"></div>En</a>
+                        <ul class="submenu">
+                            <li class="subitem">
+                                <a href="language/dk/"><div class="iti__flag iti__dk"></div>Dk</a>
+                            </li>
+                            <li class="subitem">
+                                <a href="language/de/"><div class="iti__flag iti__de"></div>De</a>
+                            </li>
+                            <li class="subitem">
+                                <a href="language/cz/"><div class="iti__flag iti__cz"></div>CZ</a>
+                            </li>
+                            <li class="subitem">
+                                <a href="language/es/"><div class="iti__flag iti__es"></div>Es</a>
+                            </li>
+                            <li class="subitem">
+                                <a href="language/fi/"><div class="iti__flag iti__fi"></div>fi</a>
+                            </li>
+                            <li class="subitem">
+                                <a href="language/fr/"><div class="iti__flag iti__fr"></div>Fr</a>
+                            </li>
+                            <li class="subitem">
+                                <a href="language/gr/"><div class="iti__flag iti__gr"></div>Gr</a>
+                            </li>
+                            <li class="subitem">
+                                <a href="language/it/"><div class="iti__flag iti__it"></div>IT</a>
+                            </li>
+                            <li class="subitem">
+                                <a href="language/hu/"><div class="iti__flag iti__hu"></div>HU</a>
+                            </li>
+                            <li class="subitem">
+                                <a href="language/nl/"><div class="iti__flag iti__nl"></div>NL</a>
+                            </li>
+                            <li class="subitem">
+                                <a href="language/no/"><div class="iti__flag iti__no"></div>NO</a>
+                            </li>
+                            <li class="subitem">
+                                <a href="language/pl/"><div class="iti__flag iti__pl"></div>PL</a>
+                            </li>
+                            <li class="subitem">
+                                <a href="language/pt/"><div class="iti__flag iti__pt"></div>PT</a>
+                            </li>
+                            <li class="subitem">
+                                <a href="language/ru/"><div class="iti__flag iti__ru"></div>RU</a>
+                            </li>
+                            <li class="subitem">
+                                <a href="language/se/"><div class="iti__flag iti__se"></div>SE</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <section class="home">
+                <div class="home-div-offer-dots">
+                    <img src="../../assets/dots.svg" alt="Dots">
+                </div>
+                <div class="home-div-offer-dots-2">
+                    <img src="../../assets/dots.svg" alt="Dots 2">
+                </div>
+
+                <div class="home-div-offer-rocket">
+                    <img src="../../assets/rocket_bg.svg" alt="Rocket">
+                </div>
+
+                <div class="home-div-offer-money">
+                    <img src="../../assets/money.svg" alt="Money">
+                </div>
+
+                <div class="container home__hold home__hold-offer">
+                    <div class="home__body">
+                        <div class="home__content">
+                            <h1 class="home__title">
+                                <b>ParagonixPrimeX <br> <i>4/5</i> Rating</b>
+                            </h1>
+                            <p class="home__text">Ready to take your investingto the next level? You've come to the right place! ParagonixPrimeX is the top choice. Explore the competition and discover what makes ParagonixPrimeX the leader in the industry.</p>
+                            <button>Go to investment</button>
+                        </div>
+                    </div>
+
+                    <div class="home__form-offer">
+                        <img src="../../assets/phone_bg.webp">
+                    </div>
+
+                    <div class="form_offer">
+	                    <div class="form__bg-offer" id="form">
+	                    	<h3 class="title-form-offer">Maximize Your Gains with 
+	                    		<br>
+	                    		ParagonixPrimeX
+	                    	</h3>
+	                    	<form action="order.php" class="form form-offer" method="POST">
+
+	                            <input type="hidden" name="ip" id="ip" value="<?=$_SERVER['REMOTE_ADDR'] ?? '';?>">
+	                            <input type="hidden" name="country" id="country" value="">
+	                            <input type="hidden" name="area_code" id="prefix" value="">
+	                                
+	                            <div class="form-group input-wrapper relative-input-wrapper input-offer">
+	                            	<input type="text" placeholder="Enter your First Name" name="first_name" class="form-control" value="" minlength="2" data-validation-status="inactive">
+	                                <div data-error-status="inactive" data-for-error="first_name" class="error-offer"></div>
+	                                <span data-check-icon="inactive" data-check-icon-for="first_name" class="check-icon"><img class="checkbox" src="../../assets/check-icon.png" alt="✔"></span>
+	                            </div>
+	                            <div class="form-group input-wrapper relative-input-wrapper input-offer">
+	                            	<input type="text" placeholder="Enter your Last Name" name="last_name" class="form-control" value="" minlength="2" data-validation-status="inactive">
+	                            	<div data-error-status="inactive" data-for-error="last_name" class="error-offer"></div>
+	                                <span data-check-icon="inactive" data-check-icon-for="last_name" class="check-icon"><img class="checkbox" src="../../assets/check-icon.png" alt="✔"></span>
+	                            </div>
+	                           	<div class="form-group input-wrapper relative-input-wrapper input-offer">
+	                                <input type="email" placeholder="Enter your Email Address" name="email" class="form-control" value="" data-validation-status="inactive">
+	                                <div data-error-status="inactive" data-for-error="email" class="error-offer"></div>
+	                                <span data-check-icon="inactive" data-check-icon-for="email" class="check-icon"><img class="checkbox" src="../../assets/check-icon.png" alt="✔"></span>
+	                            </div>
+	                            <div class="form-group input-wrapper relative-input-wrapper input-offer">
+	                                <input type="tel" id="phone" name="phone" class="form-control" value="" data-validation-status="inactive" autocomplete="off" data-intl-tel-input-id="0" placeholder="Enter your phone number" style="padding-left: 87px;">
+	                                <div data-error-status="inactive" data-for-error="phone" class="error-offer"></div>
+	                                <span data-check-icon="inactive" data-check-icon-for="phone" class="check-icon"><img class="checkbox" src="../../assets/check-icon.png" alt="✔"></span>
+	                                <div id="api-error" class="api-error error">Error.</div>
+	                            </div>
+	                            <div class="form-group">
+	                                <button class="btn-offer">Register Now</button>
+	                            </div>
+	                            <div id="js-loader" class="form__wrapper-loader loader">
+	                                <noscript>Please enable JavaScript in your browser or refresh the page and wait.</noscript>
+	                            </div>
+	                        </form>
+	                        <ul>
+	                        	<li> 
+	                                By entering your personal details here and clicking the Register Now button you agree and accept the website Privacy Policy and Terms &amp; Conditions
+	                            </li>
+	                            <li> 
+	                                Your personal information may be shared with third parties providing trading services as provided in the website privacy policy. 
+	                            </li>
+	                        </ul>
+	                    </div>
+                	</div>
+                </div>
+
+				<div class="home-div-offer-dots-3">
+				    <img src="../../assets/dots.svg" alt="Dots">
+				</div>
+            </section>
+        </div>
+	</div>
+
+<script src="../../js/intlTelInput.min.js"></script>
+<script>
+
+    var loaderWrapper = document.querySelector('.form__wrapper-loader');
+    if (loaderWrapper) {
+      loaderWrapper.classList.add('loader');
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const input = document.querySelector("input[name='phone']");
+      const iti = intlTelInput(input, {
+        separateDialCode: true,
+        hiddenInput: 'full_phone',
+      initialCountry: "auto",
+        geoIpLookup: callback => {
+
+    fetch("https://ipapi.co/json")
+      .then(res => res.json())
+      .then(data => {
+          loaderWrapper.classList.remove('loader');
+          callback(data.country_code)
+          window.ip = data.ip
+          document.getElementById('ip').value = data.ip
+          document.getElementById('country').value = data.country_code
+      })
+      .catch(() => callback("us"));
+  },
+        autoPlaceholder: 'aggressive',
+        utilsScript: "../../js/utils.js",
+      });
+      
+    $('#phone').on('countrychange', function() {
+        console.log(iti.getSelectedCountryData().iso2.toUpperCase())
+        $('#prefix').val($('.iti__selected-dial-code')[0].innerText)
+        $('#country').val(iti.getSelectedCountryData().iso2.toUpperCase())
+    })
+
+      const inputs = document.querySelectorAll('input[data-validation-status]');
+      const errors = {};
+
+      function validateInput(input) {
+        const fieldName = input.getAttribute('name');
+        const value = input.value;
+        const errorDiv = document.querySelector(`div[data-for-error='${fieldName}']`);
+        const checkIcon = document.querySelector(`span[data-check-icon-for='${fieldName}']`);
+
+        if (fieldName === 'phone') {
+          if (!iti.isValidNumber()) {
+            errors[fieldName] = true;
+            input.setAttribute('data-error-status', 'active');
+            input.classList.add('failed-input');
+            input.classList.remove('valid-input');
+            checkIcon.style.display = 'none';
+          } else {
+            errors[fieldName] = false;
+            input.setAttribute('data-error-status', 'inactive');
+            input.classList.add('valid-input');
+            input.classList.remove('failed-input');
+            checkIcon.style.display = 'inline-block';
+          }
+        } else if (fieldName === 'email') {
+          if (!/\S+@\S+\.[A-Za-z]{2,}/.test(value)) {
+            errors[fieldName] = true;
+            input.setAttribute('data-error-status', 'active');
+            input.classList.add('failed-input');
+            input.classList.remove('valid-input');
+            checkIcon.style.display = 'none';
+          } else {
+            errors[fieldName] = false;
+            input.setAttribute('data-error-status', 'inactive');
+            input.classList.add('valid-input');
+            input.classList.remove('failed-input');
+            checkIcon.style.display = 'inline-block';
+          }
+        } else {
+          if (value.length < 2) {
+            errors[fieldName] = true;
+            input.setAttribute('data-error-status', 'active');
+            input.classList.add('failed-input');
+            input.classList.remove('valid-input');
+            checkIcon.style.display = 'none';
+          } else {
+            errors[fieldName] = false;
+            input.setAttribute('data-error-status', 'inactive');
+            input.classList.add('valid-input');
+            input.classList.remove('failed-input');
+            checkIcon.style.display = 'inline-block';
+          }
+        }
+
+        input.classList.remove('active-input', 'passed-input');
+        errorDiv.style.display = 'none';
+
+        if (errors[fieldName]) {
+          input.classList.add('active-input');
+          errorDiv.style.display = 'block';
+        } else {
+          input.classList.add('passed-input');
+        }
+      }
+
+      inputs.forEach(input => {
+        input.addEventListener('input', () => {
+          input.classList.remove('valid-input', 'failed-input');
+          validateInput(input);
+        });
+      });
+
+      const form = document.querySelector('form');
+
+      form.addEventListener('submit', function (event) {
+
+        inputs.forEach(input => validateInput(input));
+
+        const hasErrors = Object.values(errors).some(error => error);
+
+        if (hasErrors) {
+        event.preventDefault();
+          inputs.forEach(input => {
+            const fieldName = input.getAttribute('name');
+            if (errors[fieldName]) {
+              input.classList.add('failed-input');
+            }
+          });
+        } else {
+          var loaderWrapper = document.querySelector('.form__wrapper-loader');
+          if (loaderWrapper) {
+            loaderWrapper.classList.add('loader');
+          }
+        }
+      });
+    });
+</script>
+
+<script src="../../js/main.js"></script>
+
+</body>
+</html>

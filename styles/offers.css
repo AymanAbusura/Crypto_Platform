@@ -1,0 +1,253 @@
+html, body {
+    overflow-x: hidden;
+/*    overflow-y: hidden;*/
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.home-div-offer-dots-3 {
+    position: absolute;
+    width: 100px;
+    left: calc(100% - 70px);
+    top: 630px;
+}
+
+.home-div-offer-dots img {
+    position: absolute;
+    width: 100px;
+    left: 81%;
+    top: 150px;
+}
+
+.home-div-offer-dots-2 img {
+    position: absolute;
+    width: 100px;
+    left: 63%;
+    top: 450px;
+}
+
+.home-div-offer-rocket img {
+    position: absolute;
+    width: 5%;
+    left: 34%;
+    top: 370px;
+    z-index: 1;
+    transform: rotate(20deg);
+}
+
+.home-div-offer-money img {
+    position: absolute;
+    width: 8%;
+    left: 50%;
+    top: 100px;
+    z-index: 1;
+    transform: rotate(-20deg);
+}
+
+.home-div-offer-5 img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none!important;
+    cursor: auto;
+}
+.home__form-offer {
+    position: relative;
+    z-index: 1;
+    max-width: 450px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.home__form-offer img {
+    width: 75%;
+}
+
+.form_offer {
+    position: relative;
+}
+
+.form__bg-offer {
+    position: absolute;
+    left: -400px;
+    width: 265px;
+    padding-top: 60px;
+    z-index: 2;
+}
+
+.form__bg-offer ul {
+    list-style-type: disc;
+    padding-left: 16px;
+}
+
+.form__bg-offer ul li {
+    position: relative;
+    font-size: 12px;
+    line-height: 1.3;
+    color: #666;
+}
+
+.form__bg-offer ul li:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.title-form-offer {
+    margin-bottom: 10px;
+    color:#1b3942;
+    font-size:18px;
+    font-weight: 600;
+    text-align:center;
+    line-height:1.3;
+}
+
+.form-offer {
+    padding: 10px;
+}
+
+.input-offer {
+    border: 1px solid #cfcfcf;
+    border-radius: 50px;
+
+}
+
+input {
+    width: 100%;
+    border-radius: 50px;
+    padding: 13px 20px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    font-size: 10px;
+}
+
+.error-offer {
+    width: 100%;
+}
+
+.btn-offer {
+    background-color: #2ad590;
+    width: 100%;
+    color: #fff;
+    padding: 14px 0;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1024px) {
+    .home-div-offer-dots-3 {
+        display: none;
+    }
+}
+
+@media only screen and (width:1024px) {
+    .home-div-offer-dots-2 img {
+        left: 50%;
+    }
+
+    .home-div-offer-money img {
+        left: 40%;
+    }
+
+    .home-div-offer-rocket img {
+        top: 450px;
+    }
+
+    .iti-mobile .iti__country-list {
+        width: 85%;
+    }
+}
+
+@media only screen and (width:768px) {
+    html, body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    }
+    .home-div-offer-dots-2 img {
+        left: 47%;
+    }
+
+    .home-div-offer-money img, .home-div-offer-rocket img { display: none; }
+
+    .form__bg-offer {
+        left: -250px;
+        top: -220px;
+    }
+
+    .home__form-offer img {
+        width: 100%;
+    }
+
+    .form__bg-offer {
+        width: 220px;
+        padding-top: 0;
+    }
+
+    .form-offer {
+        padding: 0;
+    }
+
+    .form__bg-offer ul {
+        padding-left: 0;
+    }
+
+    .form__bg-offer ul li {
+        font-size: 10px;
+
+    }
+
+    .form__bg-offer ul li:not(:last-child) {
+        margin-bottom: 1px;
+    }
+
+    .iti-mobile .iti__country-list {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width:425px) {
+
+    .home-div-offer-dots, .home-div-offer-dots-2, .home-div-offer-dots-3, .home-div-offer-money img, .home-div-offer-rocket img {
+        display: none;
+    }
+
+    .home__form-offer {
+        display: none;
+    }
+
+    .home {
+        height: 100%;
+    }
+
+    .form_offer {
+        background-color: #fff;
+        border-radius: 10px;
+    }
+
+    .home__hold-offer {
+        gap: 50px;
+    }
+
+    .form__bg-offer {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .iti-mobile .iti__country-list {
+        width: 85%;
+    }
+}

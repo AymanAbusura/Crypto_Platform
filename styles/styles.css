@@ -1,0 +1,559 @@
+.header {
+	border-top-right-radius: 20px 20px;
+	border-top-left-radius: 20px 20px;
+}
+
+.home {
+	height: 70vh;
+}
+
+.home-div, .home-div-2, .home-div-3, .home-div-4 {
+	position: relative;
+}
+
+.home-div img {
+	position: absolute;
+    width: 100px;
+    left: 85%;
+    top: 26px;
+}
+
+.home-div-2 img {
+	position: absolute;
+    width: 100px;
+    left: 63%;
+    top: 400px;
+}
+
+.home-div-3 img {
+	position: absolute;
+    width: 5%;
+    left: 85%;
+    top: 370px;
+    z-index: 1;
+    transform: rotate(20deg);
+}
+
+.home-div-4 img {
+	position: absolute;
+    width: 6%;
+    left: 64%;
+    top: 100px;
+    z-index: 1;
+    transform: rotate(-20deg);
+}
+
+.home__content {
+	width: 69%;
+}
+
+.home__body button {
+	background-color: #2ad590;
+	width: 40%;
+	margin-top: 50px;
+	color: #fff;
+    padding: 14px 0;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.home__form {
+	display: flex;
+    justify-content: center;
+}
+
+.home__form img {
+	width: 70%;
+	z-index: 0;
+}
+
+/*Choose what suits you best! && PRICES CARDS */
+.choose-section {
+	padding-block: 200px 100px!important;
+}
+
+.choose-section-div {
+	position: relative;
+}
+
+.choose-section-div img {
+	position: absolute; 
+	width: 100px;
+    left: 94.4%;
+	top: -100px;
+}
+
+.price-row {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 25px;
+}
+
+.price-col {
+    padding: 10% 14%;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.price-col:hover {
+    border: none;
+    box-shadow: 0 6px 15px rgb(0 0 0 / 50%);
+}
+
+.price-col-first {
+	display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.price-col-first p {
+    color: #848484 !important;;
+}
+
+.price-col p {
+    font-size: 22px;
+    color: #000;
+}
+
+.deposit-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+
+.deposit {
+    display: block;
+    font-size: 44px;
+    font-weight: 700;
+    color: #2ad590;
+}
+
+.price-col ul {
+    text-align: left;
+    padding-left: 30px;
+}
+
+.price-col ul li {
+    margin: 15px 0;
+    list-style: none;
+    position: relative;
+    padding-left: 35px;
+    color: #000;
+}
+
+.price-col ul li::before {
+    content: '\2713';
+    color: #fff;
+    background: #2ad590;
+    border-radius: 50%;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 14px;
+}
+
+.price-col button {
+    background-color: transparent;
+    width: 50%;
+    padding: 14px 0;
+    color: #2ad590;
+    font-size: 15px;
+    border: 2px solid #2ad590;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.price-col button:hover {
+    background-color: #2ad590;
+    color: #fff;
+}
+
+.learn {
+	font-size: 15px!important;
+    margin-top: 10%;
+    color: #848484!important;
+}
+
+.stars {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+.half-star {
+    position: relative;
+    display: inline-block;
+}
+
+.half-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    overflow: hidden;
+    color: #5f5f5f;
+}
+
+.offer-img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* How do we rate trading platforms? */
+.benefit{
+	background: #1d1d1d;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.benfits-container h2 {
+	color: #fff;
+	font-size: 50px;
+}
+
+.benfits-container-p {
+	color: #919191;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
+
+.benefit__col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 180px;
+    gap: 10px;
+    background-color: #212121;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.benefit__col:hover {
+    border-color: #454545;
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.3);
+}
+
+.benefit__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding-block: 20px 30px;
+}
+
+/* FAQ */
+
+.faq-div {
+	position: relative;
+}
+
+.faq-div img {
+	position: absolute; 
+	width: 100px; 
+	top: -50px;
+}
+
+.faq-container {
+	max-width: 1320px;
+    margin: auto;
+}
+
+.faq-container h2 {
+	font-size: 50px!important;
+}
+
+.faq-header {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.faq-description {
+    color: #919191;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
+
+.search-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 20px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50px;
+}
+
+.search-box {
+	flex-grow: 1;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+.search-button {
+	padding: 10px 20px;
+	white-space: nowrap;
+	border: none;
+	background-color: #2ad590;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.faq-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 15px;
+	padding-top: 50px;
+}
+
+.faq-item {
+	background: white;
+    padding: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.faq-item:hover {
+	border: none;
+    box-shadow: 0 6px 15px rgb(0 0 0 / 50%);
+}
+
+.faq-item h1 {
+   margin: 0;
+   font-size: 40px;
+   font-weight: 900;
+   color: #898989;
+}
+
+.faq-item h3 {
+   margin: 0;
+   font-size: 18px;
+   font-weight: bold;
+   color: #000;
+}
+
+.faq-item p {
+   color: #666;   
+   font-size: 16px;
+}
+
+/* FOOTER */
+.footer-container{
+	padding-inline: 100px!important;
+}
+
+.footer-info {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: justify;
+}
+
+.footer-info p {
+    margin: 0;
+    width: 100%;
+}
+
+@media only screen and (width:1024px) {
+	.home {
+		height: auto;
+	}
+	
+	.price-col ul li {
+    	padding-left: 20px;
+    	width: max-content;
+	}
+
+	.price-col ul {
+		padding-left: 20px;
+	}
+
+	.home-div-1 img {
+		left: 87%;
+		top: 38px;
+	}
+
+	.home-div-2 img {
+		left: 53%;
+	}
+
+	.home-div-3 img {
+		width: 10%;
+	}
+
+	.home-div-4 img {
+		width: 10%;
+    	left: 58%;
+	}
+
+	.home__content {
+		width: 70%;
+	}
+
+	.home__body button {
+		width: 60%;
+	}
+
+	.choose-section {
+		padding-block: 100px 100px !important;
+	}
+
+	.faq-div img {
+		left: -17px;
+	}
+}
+
+@media only screen and (width:768px) {
+	.home {
+    	height: auto;
+	}
+
+	.home__hold {
+		flex-direction: row!important;
+	}
+
+	.home__content {
+		width: 100%;
+	}
+
+	.home__body button {
+		width: 60%;
+	}
+
+	.home-div img {
+		left: 77%;
+	}
+
+	.home-div-2 img {
+		left: 49%;
+    	top: 280px;
+	}
+
+	.home-div-3 img{
+		width: 7%;
+		left: 79%;
+    	top: 250px;
+	}
+
+	.home-div-4 img {
+		width: 7%;
+		left: 53%;
+	}
+
+	.choose-section {
+		padding-block: 100px 100px !important;
+	}
+
+	.price-col ul li {
+		width: max-content;
+	}
+
+	.faq-section {
+		padding-block: 150px;
+	}
+
+	.faq-div img {
+		top: -120px;
+	}
+}
+
+@media only screen and (max-width:767.98px) {
+	.home-div, .home-div-2, .home-div-3, .home-div-4, .home__form { display: none; }
+	
+	.home__content {
+		width: 100%;
+	}
+
+	.home__body button {
+		width: 60%;
+    	margin-top: 20px;
+	}
+
+	.choose-section {
+		padding-block: 100px 100px !important;
+	}
+
+	.choose-section-div img {
+		left: 85%;
+	}
+
+	.benefit__row {
+		justify-content: center;
+	}
+
+	.faq-section {
+        padding-top: 150px;
+	}
+
+	.faq-div img {
+		top: -120px;
+	}
+
+	.choose-section h2 {
+		text-align: center;
+	}
+
+	.faq-grid {
+		padding-top: 0;
+	}
+
+	.footer .logo_footer {
+		margin: 0!important;
+		width: 100%;
+	}
+	
+	.logo {
+		width: 100%!important;
+	}
+
+	.flex-bl {
+		justify-content: flex-start!important;
+		margin-bottom: 0px!important;
+	}
+
+	.footer-container {
+		padding-inline: 20px!important;
+	}
+
+	.footer .flex-bl {
+		flex-direction: row!important;
+	}
+}
+
+@media only screen and (width:320px) {
+	.logo_header {
+		width: 150px!important;
+	}
+}
